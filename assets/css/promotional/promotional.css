@@ -87,10 +87,12 @@
 @media screen and (max-width: 430px) {
     .banner__title{
         font-size: 1.5rem;
+        padding-right: 2rem;
     }
 
     .banner__description{
         font-size: .6rem;
+        padding-right: 2rem;
     }
 
     .banner{
@@ -114,7 +116,7 @@
     }
     
     .banner__slide--second{
-        background-position-y: -140px;
+        background-position-y: -60px;
         background-image: url("../imgs/banner/consoles-banner-mobile.jpg");
     }
     
