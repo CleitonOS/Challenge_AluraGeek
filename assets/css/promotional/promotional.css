@@ -1,0 +1,119 @@
+.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.banner__slides{
+    width: 5120px;
+    height: 82vh;
+    display: flex;   
+}
+
+.banner__slides input{
+    display: none;
+}
+
+.banner__slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    width: 100vw;
+    height: 82vh;
+    box-shadow: inset 0 -100px 150px;
+    
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+#current{
+    /* margin-left: -100vw;
+    margin-right: 100vw; */
+    transition: all 1.5s;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.banner__slide--first{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imgs/banner/banner-games.jpg");
+}
+
+.banner__slide--second{
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imgs/banner/consoles-banner.jpg");
+}
+
+.banner__slide--third{
+    background-position-y: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imgs/banner/acessorios-banner.jpg");
+}
+
+.banner__title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+
+    padding-bottom: .2rem;
+}
+
+.banner__description{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    font-variant-numeric: lining-nums;
+
+    padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .banner__title{
+        font-size: 2.6rem;
+    }
+
+    .banner__description{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .banner__title{
+        font-size: 1.5rem;
+    }
+
+    .banner__description{
+        font-size: .6rem;
+    }
+
+    .banner{
+        height: 60vh;
+    }
+    
+    .banner__slides{
+        height: 60vh;
+    }
+    
+    .banner__slides input{
+        display: none;
+    }
+    
+    .banner__slide{
+        height: 60vh;
+    }
+    
+    .banner__slide--second{
+        background-position-x: -140px;
+    }
+
+    .banner__slide--third{
+        background-position-x: -100px;
+    }
+}
