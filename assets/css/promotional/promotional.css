@@ -109,11 +109,17 @@
         height: 60vh;
     }
     
-    .banner__slide--second{
-        background-position-x: -140px;
+    .banner__slide--first{
+        background-image: url("../imgs/banner/banner-games-mobile.jpg");
     }
-
+    
+    .banner__slide--second{
+        background-position-y: -140px;
+        background-image: url("../imgs/banner/consoles-banner-mobile.jpg");
+    }
+    
     .banner__slide--third{
-        background-position-x: -100px;
+
+        background-image: url("../imgs/banner/acessorios-banner-mobile.jpg");
     }
 }
