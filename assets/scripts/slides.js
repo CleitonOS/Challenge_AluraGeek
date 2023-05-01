@@ -59,6 +59,6 @@ setInterval(()=>{
     else{
         rolar=true;
     }
-},4500)
+},5000)
 
 console.log(slide)

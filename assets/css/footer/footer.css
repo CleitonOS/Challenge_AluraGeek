@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 430px) {
     .footer__text{
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .footer__text:not(:last-child){
