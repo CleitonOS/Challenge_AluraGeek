@@ -1,4 +1,20 @@
+.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+    transition: all 0.4s;
+}
 
+.banner__slides{
+    width: 5120px;
+    height: 82vh;
+    display: flex;   
+}
+
+.banner__slides input{
+    display: none;
+}
 
 .banner__slide{
     display: flex;
