@@ -22,6 +22,7 @@
     <link href="./assets/css/input/input.css" rel="stylesheet">
     <link href="./assets/css/footer/footer.css" rel="stylesheet">
     <link href="./assets/css/erro/erro.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/flickity/css/flickity.css">
 </head>
 <body>
     <header class="header container">
@@ -40,17 +41,9 @@
     <main>
         <section class="promotional">
             <div class="banner">
-                <div class="banner__slides">
-    
-                    <div id="back" class="btn">
-                        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
-                    </div>
-                    <div id="next" class="btn">
-                        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-                    </div>
-    
+                <div class="banner__slides main-carousel" data-flickity='{"autoPlay": true}'>
                     <!-- slide images -->
-                    <div class="slide" id="current">
+                    <div class="slide carousel-cell" id="current ">
                         <div class="banner__slide banner__slide--first">
                             <h2 class="banner__title">Promoção da Semana</h2>
                             <p class="banner__description">Jogos aclamados pelo público com 30% de desconto</p>
@@ -58,24 +51,20 @@
                     </div>
     
                     <div class="slide">
-                        <div class="banner__slide banner__slide--second">
+                        <div class="banner__slide banner__slide--second carousel-cell">
                             <h2 class="banner__title">Confira as novidades em Consoles</h2>
                             <p class="banner__description">Descubra um novo mundo de possibilidades com a nova geração de Consoles</p>
                         </div>
                     </div>
     
                     <div class="slide">
-                        <div class="banner__slide banner__slide--third">
+                        <div class="banner__slide banner__slide--third carousel-cell">
                             <h2 class="banner__title">Dê uma olhada nos acessórios do momento</h2>
                             <p class="banner__description">Veja o novo Playstation VR2 e explore mundos além da imaginação</p>
                         </div>
                     </div>
+
                 </div>
-    
-                <!-- navigation manual -->
-                <div class="manual-navigation">
-                </div>
-    
             </div>
         </section>
         
@@ -231,7 +220,7 @@
         <p class="footer__text">todos os direitos reservados.</p>
     </footer>
     
-    <script src="./assets/scripts/slides.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://kit.fontawesome.com/48cd63999d.js" crossorigin="anonymous"></script>
     <script src="./assets/scripts/validacao-contato.js"></script>
 </body>
